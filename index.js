@@ -1,6 +1,7 @@
 const apiai = require('apiai')('8225da3f7e6f4302bcc514722d4ff336');
 const app = require('express')();
 const bodyParser = require('body-parser');
+const path = require('path');
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
