@@ -34,8 +34,8 @@ app.post('/api/text', (req, res) => {
   });
   
   request.end();
-  req.on('error', err=>console.error(err));
-  res.end();
+  // req.on('error', err=>console.error(err));
+  // res.end();
 });
 
 app.listen(PORT, () => {
