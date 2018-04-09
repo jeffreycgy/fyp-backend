@@ -30,7 +30,7 @@ app.post('/api/text', (req, res) => {
     return res.json(response.result.fulfillment.speech);
   });
   request.on('error', (error) => {
-    return res.json(error.result.fulfillment.speech);
+    return res.json(error);
   });
   
   request.end();
